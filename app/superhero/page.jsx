@@ -1,4 +1,4 @@
-const Page = () => {
+const Superhero = () => {
   return (
     <div>
       <main>
@@ -13,4 +13,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default Superhero;
