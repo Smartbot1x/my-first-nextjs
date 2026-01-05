@@ -1,0 +1,90 @@
+/* .toggle-switch {
+  display: inline-block;
+  cursor: pointer;
+}
+.toggle-switch-input {
+  display: none;
+}
+.toggle-switch-slider {
+  display: inline-block;
+  width: 40px;
+  height: 22px;
+  background: #ccc;
+  border-radius: 22px;
+  position: relative;
+  transition: background 0.3s;
+}
+.toggle-switch-slider.dark {
+  background: #333;
+}
+.toggle-switch-knob {
+  position: absolute;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  transition: left 0.3s;
+  left: 2px;
+}
+.toggle-switch-input:checked + .toggle-switch-slider .toggle-switch-knob {
+  left: 20px;
+} */
+#theme-switch {
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: light-dark(#f0f0f0, #333333);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#theme-switch:hover {
+  transform: scale(1.05);
+}
+
+#theme-switch:active {
+  transform: scale(0.95);
+}
+
+.svg_black {
+  fill: #000;
+}
+
+.svg_white {
+  fill: #ffffff;
+}
+
+#theme-switch svg:last-child {
+  display: none;
+}
+
+[data-theme="dark"] #theme-switch svg:first-child {
+  display: none;
+}
+
+[data-theme="dark"] #theme-switch svg:last-child {
+  display: block;
+}
+/* dark mode styling
+ */
+/* [data-theme="dark"] .header__container,
+.header__title {
+  background-color: light-dark(#333333, #fafafa);
+  color: light-dark(#fafafa, #333333);
+} */
+/* [data-theme="dark"] .header__title {
+  color: light-dark(#ffffff, #000000);
+}
+ */
